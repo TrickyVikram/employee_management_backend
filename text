@@ -1,0 +1,14 @@
+all cmd in root folder
+
+mkdir -p {config,controllers,middleware,models,routes,uploads}
+touch server.js 
+touch config/db.js \
+      controllers/authController.js \
+      controllers/employeeController.js \
+      controllers/attendanceController.js \
+      middleware/authMiddleware.js \
+      models/Employee.js \
+      models/Admin.js \
+      routes/authRoutes.js \
+      routes/employeeRoutes.js \
+      routes/attendanceRoutes.js
