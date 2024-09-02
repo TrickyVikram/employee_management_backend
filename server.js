@@ -41,7 +41,9 @@ app.use('/api/admin',
     adminRoutes);
 
 
-
+ app.get('/', (req, res) => {
+     res.send('this works api is running');
+ });    
 
 
 const PORT = process.env.PORT || 4500;

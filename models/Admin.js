@@ -14,6 +14,10 @@ const AdminSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    isAdmin: {
+        type: Number, 
+        // default: 1, 
+    },
     date: {
         type: Date,
         default: Date.now,

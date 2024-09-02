@@ -1,5 +1,18 @@
 const Employee = require('../models/Employee');
 
+
+
+
+exports.getDashboardData = async (req, res) => {
+    console.log("employeeMiddleware");
+    try {
+        const employees = await Employee.find();
+        res.json(employees);
+    } catch (error) {
+        res.status(500).json({ error: 'Server error' });
+    }
+};
+
 exports.getAllEmployees = async (req, res) => {
     try {
         const employees = await Employee.find();

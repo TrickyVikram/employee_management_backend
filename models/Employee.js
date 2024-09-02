@@ -15,8 +15,8 @@ const EmployeeSchema = new mongoose.Schema({
         required: true,
     },
     isAdmin: {
-        type: Boolean,
-        default: false,
+        type: Number, 
+        // default: 0,
     },
     profileImage: {
         type: String,
